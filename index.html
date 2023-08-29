@@ -9,9 +9,14 @@
     <style>
        .welcome{
         font-size: larger;
+        text-align: justify;
+       }
+       .collapsibles{        
+        text-align: justify;
        }
        .logo{
         padding-left: 40px;
+        
        }
     </style>
 </head>
@@ -19,7 +24,7 @@
     <header>
         <!-- navbar -->
         <div class="navbar-fixed">
-            <nav class="white z-depth-0"> 
+            <nav class="white z-depth-1"> 
                 <div class="nav-wrapper">
                     <div class="container hide-on-med-and-down"> 
                         <a href="#" class="brand-logo">
@@ -76,11 +81,62 @@
         <!-- Welcome Section -->
         <section>
             <div class="container">
-                <ul class="collection">
-                    <li class="collection-item"><h3 class="orange-text text-darken-4">Hello there, foodies!</h3></li>
-                    <li class="collection-item"><p class="welcome">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos accusamus dolores impedit. Sit, fugiat. Quaerat quia maiores ut vitae in mollitia, repudiandae suscipit nisi voluptates, distinctio quos dolores minima assumenda laudantium veritatis non odit! Ea fuga soluta possimus quaerat minus nulla autem illo doloribus facilis saepe cumque illum maiores, perspiciatis earum harum velit! Sunt corrupti molestias sit eius adipisci, dolor pariatur, facilis perspiciatis obcaecati aut distinctio, sequi cupiditate expedita atque.</p></li>
-                </ul>                                
-            </div>
+                    <h3 class="orange-text text-darken-4">Hello there, foodies!</h3>
+                    <p class="welcome">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos accusamus dolores impedit. Sit, fugiat. Quaerat quia maiores ut vitae in mollitia, repudiandae suscipit nisi voluptates, distinctio quos dolores minima assumenda laudantium veritatis non odit! Ea fuga soluta possimus quaerat minus nulla autem illo doloribus facilis saepe cumque illum maiores, perspiciatis earum harum velit! Sunt corrupti molestias sit eius adipisci, dolor pariatur, facilis perspiciatis obcaecati aut distinctio, sequi cupiditate expedita atque.</p>
+                    <br>
+                    <hr>
+                    <br>
+                    <div class="row">
+                        <div class="col s12 m4 l4">
+                            <ul class="collapsible">
+                                <li>
+                                    <div class="collapsible-header orange darken-4 white-text">Cakes</div>
+                                    <div class="collapsible-body white">                                          
+                                        <div class="center-align">
+                                            <img src="img/sponge_cake.webp" alt="sponge cake" width="100%">
+                                            <p class="White-text collapsibles">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum deserunt nulla ad aspernatur beatae sit?</p>    
+                                            <strong class="orange darken-4 white-text text-darken-4 left" style="padding: 10px;"> ALL CAKE RECIPES </strong>                  
+                                            <br>              
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>    
+                        </div>
+                        <div class="col s12 m4 l4">
+                            <ul class="collapsible">
+                                <li>
+                                    <div class="collapsible-header orange darken-4 white-text">Soups</div>
+                                    <div class="collapsible-body white">                                          
+                                        <div class="center-align">
+                                            <img src="img/mexican_soup.webp" alt="sponge cake" width="100%">
+                                            <p class="White-text collapsibles">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum deserunt nulla ad aspernatur beatae sit?</p>    
+                                            <strong class="orange darken-4 white-text text-darken-4 left" style="padding: 10px;"> ALL CAKE RECIPES </strong>                  
+                                            <br>              
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>    
+                        </div>
+                        <div class="col s12 m4 l4">
+                            <ul class="collapsible">
+                                <li>
+                                    <div class="collapsible-header orange darken-4 white-text">Chicken</div>
+                                    <div class="collapsible-body white">                                          
+                                        <div class="center-align">
+                                            <img src="img/chicken_8.webp" alt="sponge cake" width="100%">
+                                            <p class="White-text collapsibles">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum deserunt nulla ad aspernatur beatae sit?</p>    
+                                            <strong class="orange darken-4 white-text text-darken-4 left" style="padding: 10px;"> ALL CAKE RECIPES </strong>                  
+                                            <br>              
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>    
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </ul>                                
+        </div>
             
         </section>
         <!-- Testimonuials -->
@@ -103,6 +159,7 @@
         $(document).ready(function(){
             $('.slider').slider()
             $('.sidenav').sidenav()
+            $('.collapsible').collapsible()
         })
     </script>
 </body>
