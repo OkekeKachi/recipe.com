@@ -33,39 +33,34 @@
 <body>
     <header>
         <!-- navbar -->
-        <div class="navbar-fixed">
-            <nav class="white z-depth-1"> 
-                <div class="nav-wrapper">
-                    <div class="container hide-on-med-and-down"> 
-                        <a href="#" class="brand-logo">
-                            <img src="img/logo.png" alt="logo" width="15%">
-                        </a>                   
-                        <ul class="right ">
-                            <li><a href="" class="orange-text orange-text text-darken-4">Home</a></li>
-                            <li><a href="" class="orange-text orange-text text-darken-4">Cakes</a></li>
-                            <li><a href="" class="orange-text orange-text text-darken-4">Soups</a></li>
-                            <li><a href="" class="orange-text orange-text text-darken-4">Chicken</a></li>
-                            <li><a href="" class="orange-text orange-text text-darken-4">Customer</a></li>
-                        </ul>                        
-                    </div>          
-                    <div class="container hide-on-large-and-up">
-                        <a href="#links" class=" hide-on-large-and-up sidenav-trigger"><img src="img/menu.svg" alt="navicon"></a>
-                        <a href="#" class="brand-logo">
-                            <img src="img/logo.png" alt="logo" width="80%" class="logo hide-on-large-only">
-                        </a>
-                    </div>  
-                </div>
-            </nav>
-        </div>
-        <ul class=" sidenav orange darken-4" id="links">
-            <li><a href="#" class="white-text">Home</a></li>
-            <li><a href="#" class="white-text">Cakes</a></li>
-            <li><a href="#" class="white-text">Soups</a></li>
-            <li><a href="#" class="white-text">Chicken</a></li>
-            <li><a href="#" class="white-text">Customer</a></li>
+       <div class="navbar-fixed">
+        <nav class="nav-wrapper white">
+            <div class="container navbar">
+                <a href="index.html" class="brand-logo">
+                    <img src="img/logo.png" alt="" width="150px">
+                </a>
+                <a href="#mobile-links" class="sidenav-trigger">
+                    <i class="material-icons orange-text text-darken-4">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#home" class=" orange-text text-darken-4 scrollspy"><strong>Home</strong> </a></li>
+                    <li><a href="#cakes" class=" orange-text text-darken-4 scrollspy"><strong>Cakes</strong> </a></li>
+                    <li><a href="#soups" class=" orange-text text-darken-4 scrollspy"><strong>Soups</strong> </a></li>
+                    <li><a href="#chicken" class=" orange-text text-darken-4 scrollspy"><strong>Chicken</strong> </a></li>
+                    <li><a href="#customers" class=" orange-text text-darken-4 scrollspy"><strong>Customers</strong> </a></li>
+                </ul>
+            </div>
+        </nav>
+       </div>
+        <ul class="sidenav orange darken-4" id="mobile-links">
+            <li><a href="" class="white-text">Home</a></li>
+            <li><a href="" class="white-text">Cakes</a></li>
+            <li><a href="" class="white-text">Soups</a></li>
+            <li><a href="" class="white-text">Chicken</a></li>
+            <li><a href="" class="white-text">Customers</a></li>
         </ul>
         <!-- slider -->        
-        <section>
+        <section id="home">
             <div class="slider">
                 <ul class="slides">
                     <li>
@@ -89,12 +84,12 @@
     </header>
     <main>
         <!-- Welcome Section -->
-        <section>
-            <div class="container">
+        <section >
+            <div class="container" >
                     <h3 class="orange-text text-darken-4">Hello there, foodies!</h3>
                     <p class="welcome">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos accusamus dolores impedit. Sit, fugiat. Quaerat quia maiores ut vitae in mollitia, repudiandae suscipit nisi voluptates, distinctio quos dolores minima assumenda laudantium veritatis non odit! Ea fuga soluta possimus quaerat minus nulla autem illo doloribus facilis saepe cumque illum maiores, perspiciatis earum harum velit! Sunt corrupti molestias sit eius adipisci, dolor pariatur, facilis perspiciatis obcaecati aut distinctio, sequi cupiditate expedita atque.</p>
                     <br>
-                    <hr>
+                    <hr id="customers" class="scrollspy">
                     <br>
                     <div class="row">
                         <div class="col s12 m4 l4">
@@ -159,8 +154,8 @@
             
         </section>
         <!-- Testimonials -->
-        <section>
-            <div class="container">
+        <section >
+            <div class="container" >
                 <h3 class=" center-align orange-text text-darken-4">What Our Customers Say...</h3>
                 <ul class="collection">
                     <li class="collection-item avatar">
@@ -187,13 +182,13 @@
             </div>            
         </section>
         <!-- Cakes -->
-        <section>
+        <section id="cakes" class="scrollspy">
             <div class="parallax-container">
                 <div class="parallax">
                     <img src="img/cake.jpg" alt="cake image">
                 </div>
             </div>
-            <div class="container">
+            <div class="container" >
                 <h3 class="orange-text text-darken-4">Cakes</h3>
                 <p class="welcome">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse laborum facilis corrupti nihil ab ullam, numquam pariatur quaerat rerum neque reiciendis non, error tenetur velit! Ratione sint atque odit reprehenderit obcaecati impedit at laudantium quos, cum, veritatis nulla placeat dignissimos explicabo ex. Pariatur commodi iure nesciunt tempore amet ducimus facere.</p>
                 <div class="row">
@@ -349,13 +344,13 @@
             </div>
         </section>
         <!-- Soups -->
-        <section>
+        <section id="soups" class="scrollspy">
             <div class="parallax-container">
                 <div class="parallax">
                     <img src="img/soup.jpg" alt="">
                 </div>
             </div>
-            <div class="container">
+            <div class="container" >
                 <h3 class="orange-text text-darken-4">Soups</h3>
                 <p class="welcome">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam repellat, debitis quos sint fuga voluptatibus laudantium labore placeat maiores. Numquam magni sunt alias nemo veritatis illum asperiores esse nulla vitae praesentium ea harum, libero odio nam culpa, quibusdam nisi repellendus similique quas enim, consequuntur ratione a nobis tenetur. In, molestias!
@@ -476,7 +471,7 @@
                                 <img src="img/morroco_soup.webp" alt="morroco_soup" class=" responsive-img materialboxed">
                             </div>
                             <div class="card-content">
-                                <p class="orange-text text-darken-4 card-head">Morroco Soup</p>
+                                <p class="orange-text text-darken-4 card-head tooltipped" data-position="top" data-tooltip="This soup originated from Rome">Morroco Soup</p>
                                 <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, soluta.</span>
                             </div>
                             <div class="card-action center">
@@ -505,13 +500,13 @@
             </div>
         </section>
         <!-- Chicken -->
-        <section>
+        <section id="chicken" class="scrollspy">
             <div class="parallax-container">
                 <div class="parallax">
                     <img src="img/chicken.jpg" alt="">
                 </div>
             </div>
-            <div class="container">
+            <div class="container" >
                 <h3 class="orange-text text-darken-4">Chicken</h3>
                 <p class="welcome">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam repellat, debitis quos sint fuga voluptatibus laudantium labore placeat maiores. Numquam magni sunt alias nemo veritatis illum asperiores esse nulla vitae praesentium ea harum, libero odio nam culpa, quibusdam nisi repellendus similique quas enim, consequuntur ratione a nobis tenetur. In, molestias!
@@ -679,6 +674,22 @@
             </div>
             <div class="orange darken-4 center-align foot white-text"><h6> &COPY; 2023 Recipe.com | FELIXIS-TECH</h6></div>
         </div>
+
+        <div class="fixed-action-btn ">
+            <a class="btn-floating btn-large orange darken-4 pulse">
+              <i class="large material-icons">message</i>
+            </a>
+            <ul>
+              <li>
+                <a class="btn-floating red tooltipped" data-position="left" data-tooltip="Create a Chart">
+                    <i class="material-icons">insert_chart</i>
+                </a>
+              </li>
+              <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+              <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+              <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+            </ul>
+          </div>
     </footer>
 
 
@@ -693,6 +704,9 @@
             $('.collapsible').collapsible()
             $('.parallax').parallax()
             $('.materialboxed').materialbox()
+            $('.scrollspy').scrollSpy();
+            $('.fixed-action-btn').floatingActionButton();
+            $('.tooltipped').tooltip();
         })
     </script>
 </body>
