@@ -33,7 +33,7 @@
 <body>
     <header>
         <!-- navbar -->
-       <div class="navbar-fixed">
+       <div class="navbar-fixed">        
         <nav class="nav-wrapper white">
             <div class="container navbar">
                 <a href="index.html" class="brand-logo">
@@ -53,18 +53,18 @@
         </nav>
        </div>
         <ul class="sidenav orange darken-4" id="mobile-links">
-            <li><a href="" class="white-text">Home</a></li>
-            <li><a href="" class="white-text">Cakes</a></li>
-            <li><a href="" class="white-text">Soups</a></li>
-            <li><a href="" class="white-text">Chicken</a></li>
-            <li><a href="" class="white-text">Customers</a></li>
+            <li><a href="#home" class="white-text scrollspy">Home</a></li>
+            <li><a href="#cakes" class="white-text scrollspy">Cakes</a></li>
+            <li><a href="#soups" class="white-text scrollspy">Soups</a></li>
+            <li><a href="#chicken" class="white-text scrollspy">Chicken</a></li>
+            <li><a href="#customers" class="white-text scrollspy">Customers</a></li>
         </ul>
         <!-- slider -->        
         <section id="home">
             <div class="slider">
                 <ul class="slides">
-                    <li>
-                        <img src="img/cake_fruit.jpg" alt="chicken_1">
+                    <li>                                                
+                        <img src="img/cake_fruit.jpg" alt="chicken_1">                       
                     </li>
                     <li>
                         <img src="img/shrimp_soup.jpg" alt="chicken_2">
@@ -661,14 +661,18 @@
                 <div class="row">
                     <div class="col s4 l4">
                         <img src="img/logo.png" width="50%" style="padding-top: 20px;" class="hide-on-med-and-down">
-                        <img src="img/logo.png" width="200%" style="padding-top: 20px;" class=" hide-on-large-only">
+                        <img src="img/logo.png" width="100%" style="padding-top: 20px;" class=" hide-on-large-only">
                         <p class="white-text hide-on-med-and-down">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium voluptatum molestias, sit aliquam repudiandae esse velit repellat debitis. Ullam, itaque!</p>
-                        <p class=" hide-on-large-only white-text"  style="padding-top: 32px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, minus.</p>
+                        <p class=" hide-on-large-only white-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, minus.</p>
                     </div>
                     <div class="col l4 s4"></div>
                     <div class="col l4 s4">
-                        <p class="orange-text text-darken-4 foothead">Quick Links</p>
-                        <p class="white-text">Back to Top <br>Cakes <br>Soups <br>Chicken <br>Customrer </p>                                                
+                        <p class="orange-text text-darken-4 foothead">Quick Links</p>                   
+                        <a href="" class="white-text">07039233521</a><br>
+                        <a href="tel:09123231279"class="white-text">09123231279</a><br>
+                        <a href="mailto:okekefelix51@gmail.com" class="white-text">okekefelix51@gmail.com</a>
+
+                        <p class="white-text"> <br>Cakes <br>Soups <br>Chicken <br>Customrer </p>                                                
                     </div>
                 </div>
             </div>
@@ -683,6 +687,7 @@
               <li>
                 <a class="btn-floating red tooltipped" data-position="left" data-tooltip="Create a Chart">
                     <i class="material-icons">insert_chart</i>
+                    
                 </a>
               </li>
               <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
